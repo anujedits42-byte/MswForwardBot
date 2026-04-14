@@ -1,12 +1,14 @@
-FROM python:3.8-slim-buster
+FROM python:3.10-slim
 
-RUN apt update && apt upgrade -y
-RUN apt install git -y
+RUN apt-get update && apt-get install -y git \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
 COPY requirements.txt /requirements.txt
 
-RUN cd /
-RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /fwdbot
+RUN pip install --upgrade pip && pip install -r /requirements.txt
+
 WORKDIR /fwdbot
-COPY start.sh /start.sh
-CMD ["/bin/bash", "/start.sh"] 
+COPY . /fwdbot
+
+CMD ["bash", "start.sh"]
