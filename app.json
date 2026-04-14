@@ -1,5 +1,5 @@
 {
-  "name": "MswForwardBot",
+  "name": "𝐀𝐊ForwardBot",
   "description": "Telegram's Best Smart Plugin File Forward Bot",
   "logo": "https://graph.org/file/abbfd820ca33111f9e737.jpg",
   "stack": "container",
@@ -10,16 +10,16 @@
     "forward",
     "bot"
   ],
-  "success_url": "https://t.me/mswpresent",
-  "website": "https://github.com/Mswpresents/MswForwardBot",
-  "repository": "https://github.com/Mswpresents/MswForwardBot",
+  "success_url": "https://t.me/anujedits76",
+  "website": "https://github.com/anujedits42-byte/MswForwardBot",
+  "repository": "https://github.com/anujedits42-byte/MswForwardBot",
   "env": {
     "API_ID": {
-      "description": "Get this value from https://my.telegram.org or @UseTGSBot",
+      "description": "Get this value from https://my.telegram.org or @api_id_api_hash_ak_bot",
       "value": ""
     },
     "API_HASH": {
-      "description": "Get this value from https://my.telegram.org or @UseTGSBot",
+      "description": "Get this value from https://my.telegram.org or @api_id_api_hash_ak_bot",
       "value": ""
     },
     "BOT_TOKEN": {
