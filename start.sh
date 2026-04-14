@@ -9,7 +9,7 @@ else
   git clone -b $BRANCH https://github.com/anujedits42-byte/MswForwardBot
 fi
 
-cd Ultra-Forward-Botss
+cd MswForwardBot
 
 pip3 install -U -r requirements.txt
 
