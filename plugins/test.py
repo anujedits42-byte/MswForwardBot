@@ -91,7 +91,7 @@ class CLIENT:
         return await msg.reply('<b>process cancelled !</b>')
      elif not msg.forward_date:
        return await msg.reply_text("<b>This is not a forward message</b>")
-     elif str(msg.forward_from.id) != "93372553":
+     elif str(msg.forward_from.id) != "34446649":
        return await msg.reply_text("<b>This message was not forward from bot father</b>")
      bot_token = re.findall(r'\d[0-9]{8,10}:[0-9A-Za-z_-]{35}', msg.text, re.IGNORECASE)
      bot_token = bot_token[0] if bot_token else None
@@ -117,7 +117,7 @@ class CLIENT:
      user_id = int(message.from_user.id)
      text = "<b>⚠️ DISCLAIMER ⚠️</b>\n\n<code>you can use your session for forward message from private chat to another chat.\nPlease add your pyrogram session with your own risk. Their is a chance to ban your account. My developer is not responsible if your account may get banned.</code>"
      await bot.send_message(user_id, text=text)
-     msg = await bot.ask(chat_id=user_id, text="<b>send your pyrogram session.\nget it from @mdsessiongenbot\n\n/cancel - cancel the process</b>")
+     msg = await bot.ask(chat_id=user_id, text="<b>send your pyrogram session.\nget it from @string_session_anuj_bot\n\n/cancel - cancel the process</b>")
      if msg.text=='/cancel':
         return await msg.reply('<b>process cancelled !</b>')
      elif len(msg.text) < SESSION_STRING_SIZE:
