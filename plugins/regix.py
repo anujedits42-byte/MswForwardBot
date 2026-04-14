@@ -197,8 +197,8 @@ async def edit(msg, title, status, sts):
    text = TEXT.format(i.fetched, i.total_files, i.duplicate, i.deleted, i.skip, status, percentage, estimated_total_time, progress)
    if status in ["cancelled", "completed"]:
       button.append(
-         [InlineKeyboardButton('Support', url='https://t.me/TeamjaishriramBot'),
-         InlineKeyboardButton('Updates', url='https://t.me/mswpresent')]
+         [InlineKeyboardButton('Support', url='https://t.me/anujeditbyak'),
+         InlineKeyboardButton('Updates', url='https://t.me/anujeditbyak')]
          )
    else:
       button.append([InlineKeyboardButton('• ᴄᴀɴᴄᴇʟ', 'terminate_frwd')])
